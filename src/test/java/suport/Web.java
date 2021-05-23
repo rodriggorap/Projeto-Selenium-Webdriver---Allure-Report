@@ -36,6 +36,9 @@ public class Web {
 
     @AfterMethod
     public void fechar() {
+        String screenshotArquivo = "C:\\Users\\USUARIO1\\Desktop\\ProjetoSeleniumAlureReport\\src\\screenshot\\" + "Screenshot"+ ".png";
+        Screenshot.tirar(navegador, screenshotArquivo);
+
         navegador.quit();
     }
 
