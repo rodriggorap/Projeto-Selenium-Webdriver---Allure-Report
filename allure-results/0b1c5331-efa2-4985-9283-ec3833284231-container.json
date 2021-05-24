@@ -1,1 +1,0 @@
-{"uuid":"0b1c5331-efa2-4985-9283-ec3833284231","name":"suport.Web.fechar","children":["8c7a4fb2-a534-47ce-95c5-ba95549b2426"],"description":"","befores":[],"afters":[{"name":"fechar","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1621141436521,"stop":1621141437472}],"links":[],"start":1621141436520,"stop":1621141437472}

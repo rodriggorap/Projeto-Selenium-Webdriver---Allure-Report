@@ -1,6 +1,9 @@
 package suport;
 
 import actions.LoginActions;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
@@ -8,6 +11,12 @@ import org.testng.annotations.BeforeMethod;
 import pageObject.HomeObject;
 import pageObject.LoginObject;
 
+import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 public class Web {
@@ -35,9 +44,20 @@ public class Web {
     }
 
     @AfterMethod
-    public void fechar() {
-        String screenshotArquivo = "C:\\Users\\USUARIO1\\Desktop\\ProjetoSeleniumAlureReport\\src\\screenshot\\" + "Screenshot"+ ".png";
-        Screenshot.tirar(navegador, screenshotArquivo);
+    public void fechar() throws IOException {
+        //Tirar um screenshot
+        TakesScreenshot ss = (TakesScreenshot) navegador;
+        File arquivo = ss.getScreenshotAs(OutputType.FILE);
+
+        //Formatar o arquivo para o tipo jpg
+
+        BufferedImage bimage = ImageIO.read(arquivo);
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+
+        ImageIO.write(bimage,"png",baos);
+        byte [] finalshot = baos.toByteArray();
+        //Adicionar o arquivo ao allure report
+        io.qameta.allure.Allure.addAttachment("Evidência",new ByteArrayInputStream(finalshot));
 
         navegador.quit();
     }
