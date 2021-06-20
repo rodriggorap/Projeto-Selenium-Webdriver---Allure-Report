@@ -1,0 +1,21 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "tests.LoginTests",
+    "children" : [ {
+      "name" : "deveFazerLogin",
+      "uid" : "3acab5a54062c081",
+      "parentUid" : "1f9f55d0f50438e8feac4e19f374dbb8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1622396707193,
+        "stop" : 1622396708642,
+        "duration" : 1449
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "tests.LoginTests"
+  } ]
+}

@@ -1,0 +1,25 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "DESKTOP-J8757GU",
+    "children" : [ {
+      "name" : "6164@DESKTOP-J8757GU.main(1)",
+      "children" : [ {
+        "name" : "deveFazerLogin",
+        "uid" : "3acab5a54062c081",
+        "parentUid" : "29b10174984f1dc895d55c796001b91e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1622396707193,
+          "stop" : 1622396708642,
+          "duration" : 1449
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "29b10174984f1dc895d55c796001b91e"
+    } ],
+    "uid" : "b23859a289d6255a6be8bf6d2bd3cad1"
+  } ]
+}

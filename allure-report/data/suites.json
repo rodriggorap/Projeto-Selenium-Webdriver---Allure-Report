@@ -1,0 +1,29 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "Default Suite",
+    "children" : [ {
+      "name" : "ProjetoSeleniumAlureReport",
+      "children" : [ {
+        "name" : "tests.LoginTests",
+        "children" : [ {
+          "name" : "deveFazerLogin",
+          "uid" : "3acab5a54062c081",
+          "parentUid" : "60378011da18bb5dde68e0855030cad0",
+          "status" : "passed",
+          "time" : {
+            "start" : 1622396707193,
+            "stop" : 1622396708642,
+            "duration" : 1449
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "60378011da18bb5dde68e0855030cad0"
+      } ],
+      "uid" : "555119faaf2d2226ad7f3df8c5fc8184"
+    } ],
+    "uid" : "8399274b4bb69ec8699907dd6ef7de4e"
+  } ]
+}

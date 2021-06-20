@@ -1,0 +1,17 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "deveFazerLogin",
+    "uid" : "3acab5a54062c081",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1622396707193,
+      "stop" : 1622396708642,
+      "duration" : 1449
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  } ]
+}

@@ -1,0 +1,11 @@
+[ {
+  "uid" : "3acab5a54062c081",
+  "name" : "deveFazerLogin",
+  "time" : {
+    "start" : 1622396707193,
+    "stop" : 1622396708642,
+    "duration" : 1449
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
